@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wildlife Rescue Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f5;
+      padding: 25px;
+      padding-top: 70px;
+      min-height: 1200px;
+    }
+
+    h1, h2 {
+      color: #17324d;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .alert {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #146c6a;
+      color: white;
+      padding: 14px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .animal {
+      background: #e4f2ef;
+      border: 2px solid #146c6a;
+      padding: 10px;
+      margin: 8px 0;
+      width: 220px;
+    }
+
+    .moved {
+      position: relative;
+      left: 35px;
+      background: #b9ddd2;
+    }
+
+    .card {
+      position: relative;
+      background: white;
+      border: 2px solid #72a99a;
+      border-radius: 10px;
+      padding: 25px;
+      width: 230px;
+      text-align: center;
+    }
+
+    .tag {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #e47755;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .zone {
+      position: sticky;
+      top: 50px;
+      background: #146c6a;
+      color: white;
+      padding: 10px;
+      margin-top: 25px;
+      font-weight: bold;
+    }
+
+    .case {
+      background: white;
+      border: 2px solid #72a99a;
+      padding: 10px;
+      margin: 8px 0;
+      width: 230px;
+      border-radius: 8px;
+    }
+
+    code {
+      background: #e8eee8;
+      color: #17324d;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="alert">WILDLIFE RESCUE CENTER · Care teams are on duty | Fixed notice</div>
+
+  <h1>Wildlife Rescue Center</h1>
+  <p style="text-align:center;">Explore CSS positioning through animal care records, rescue badges, and habitat markers.</p>
+
+  <h2>Everyday Care · Static Positioning</h2>
+  <p>Static is the browser's default layout: care records flow naturally, one after another.</p>
+  <div class="animal">Lion · Resting habitat</div>
+  <div class="animal">Elephant · Water habitat</div>
+  <div class="animal">Penguin · Cool habitat</div>
+
+  <h2>Rescue Update · Relative Positioning</h2>
+  <p>A rescued animal record shifts from its usual spot with <code>left: 35px</code>, while its original space remains.</p>
+  <div class="animal">Giraffe · Health check pending</div>
+  <div class="animal moved">Koala · Rescued and resting</div>
+  <div class="animal">Zebra · Feeding habitat</div>
+
+  <h2>Care Status · Absolute Positioning</h2>
+  <p>The status badge is anchored to its animal card with absolute positioning.</p>
+  <div class="card">
+    Panda<br>
+    Medical check complete
+    <div class="tag">READY</div>
+  </div>
+
+  <h2>Center-Wide Notice · Fixed Positioning</h2>
+  <p>The teal notice stays at the top of the screen as you scroll through the center.</p>
+
+  <h2>Habitat Cases · Sticky Positioning</h2>
+  <p>This habitat marker stays near the top as you browse the animal care cases.</p>
+
+  <div class="zone">Wildlife Care Cases · Sticky marker</div>
+
+  <div class="case">Tiger · Under observation</div>
+  <div class="case">Deer · Ready for release</div>
+  <div class="case">Owl · Overnight care</div>
+  <div class="case">Turtle · Shell treatment</div>
+  <div class="case">Rabbit · Cleared as healthy</div>
+  <div class="case">Flamingo · Wing assessment</div>
+  <div class="case">Monkey · Enrichment area</div>
+  <div class="case">Horse · Recovery stable</div>
+
+  <h2>Placement Controls · top, right, bottom, left</h2>
+  <p>
+    Use <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>
+    to fine-tune where a positioned element appears.
+  </p>
+
+</body>
+</html>
